@@ -10,9 +10,10 @@ const { href, title } = Astro.props;
 <div>
 	<div>
 		<span class="flex h-12 w-12 items-center justify-center rounded-md bg-white bg-opacity-10">
-			<a href={href}>
-				<slot name="svg" />
-			</a>
+			{href
+				? <a href={href}><slot name="svg" /></a>
+				: <slot name="svg" />
+			}
 		</span>
 	</div>
 	<div class="mt-6">
