@@ -3,79 +3,66 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
-	</main>
-</Layout>
+<Layout title="Piepworks LLC / makers of fine software products">
+	<div class="text-center">
+		<h1 class="flex justify-center items-end gap-3 mt-1 text-4xl font-bold tracking-tight text-emerald-200 sm:text-5xl lg:text-6xl">
+				<!-- Heroicon name: solid/home-modern -->
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 text-emerald-600 mb-1">
+					<path d="M19.006 3.705a.75.75 0 00-.512-1.41L6 6.838V3a.75.75 0 00-.75-.75h-1.5A.75.75 0 003 3v4.93l-1.006.365a.75.75 0 00.512 1.41l16.5-6z" />
+					<path fill-rule="evenodd" d="M3.019 11.115L18 5.667V9.09l4.006 1.456a.75.75 0 11-.512 1.41l-.494-.18v8.475h.75a.75.75 0 010 1.5H2.25a.75.75 0 010-1.5H3v-9.129l.019-.006zM18 20.25v-9.565l1.5.545v9.02H18zm-9-6a.75.75 0 00-.75.75v4.5c0 .414.336.75.75.75h3a.75.75 0 00.75-.75V15a.75.75 0 00-.75-.75H9z" clip-rule="evenodd" />
+				</svg>
+				Piepworks <span class="self-end text-3xl text-emerald-600">LLC</span>
+		</h1>
+		<p class="mx-auto mt-5 max-w-xl text-xl text-emerald-200">Heirloom-quality software for people and small businesses. Hand-made in Vermont, USA.</p>
+	</div>
+	<div class="mt-12 grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:mt-16 lg:gap-x-8 lg:gap-y-16">
+		<Card title="Cassette Nest" href="https://cassettenest.com">
+			An easy and fun way to build a lifelong archive of metadata about your film photography. <a href="https://cassettenest.com">Sign up!</a>
 
-<style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
-</style>
+			<svg slot="svg" viewBox="0 0 1200 1200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" fill="currentColor" class="text-white h-8 w-8">
+				<g transform="matrix(3.74551,0,0,5.61434,252.045,126.409)">
+						<rect x="-67.293" y="-22.515" width="320.383" height="213.738" style="fill:none;"/>
+						<g transform="matrix(11.4209,0,0,-7.61928,-466.726,488.176)">
+								<path d="M59,44L39,44C38.451,44 38,44.451 38,45L38,61C38,61.549 38.451,62 39,62L59,62C59.549,62 60,61.549 60,61L60,45C60,44.451 59.549,44 59,44ZM58,48L56,48L56,46L58,46L58,48ZM52,48L52,46L54,46L54,48L52,48ZM50,48L48,48L48,46L50,46L50,48ZM46,48L44,48L44,46L46,46L46,48ZM48,50L48,56L40,56L40,50L48,50ZM46,58L46,60L44,60L44,58L46,58ZM48,58L50,58L50,60L48,60L48,58ZM52,58L54,58L54,60L52,60L52,58ZM50,56L50,50L58,50L58,56L50,56ZM42,46L42,48L40,48L40,46L42,46ZM40,58L42,58L42,60L40,60L40,58ZM56,60L56,58L58,58L58,60L56,60Z" style="fill-rule:nonzero;"/>
+						</g>
+				</g>
+			</svg>
+		</Card>
+
+		<Card title="Lists of Books" href="https://listsofbooks.com">
+			<a href="https://listsofbooks.com">Count how many books you've read</a> from various authors and categories!
+
+			<svg slot="svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-white w-6 h-6">
+				<!-- Heroicon name: outline/book-open -->
+				<path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+			</svg>
+		</Card>
+
+		<Card title="Affiliate Links">
+			You can help support our work by buying <a href="https://bookshop.org/shop/piepworks">books</a> or <a href="https://cottonbureau.com/people/piepworks">shirts</a>!
+
+			<svg slot="svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-white w-6 h-6">
+				<!-- Heroicon name: outline/link -->
+				<path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+			</svg>
+		</Card>
+
+		<Card title="More to come!">
+			We’ve got a bunch more stuff in the works. Check back soon.
+
+			<svg slot="svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
+				<!-- Heroicon name: outline/bolt -->
+				<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+			</svg>
+		</Card>
+
+		<Card title="Get in touch">
+			Are you small Vermont business that has an idea for something awesome on the web that you’re not able to get elsewhere? <a href="mailto:homepage@piepworks.com">Email us!</a>
+
+			<svg slot="svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
+				<!-- Heroicon name: outline/envelope-open -->
+				<path stroke-linecap="round" stroke-linejoin="round" d="M21.75 9v.906a2.25 2.25 0 01-1.183 1.981l-6.478 3.488M2.25 9v.906a2.25 2.25 0 001.183 1.981l6.478 3.488m8.839 2.51l-4.66-2.51m0 0l-1.023-.55a2.25 2.25 0 00-2.134 0l-1.022.55m0 0l-4.661 2.51m16.5 1.615a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V8.844a2.25 2.25 0 011.183-1.98l7.5-4.04a2.25 2.25 0 012.134 0l7.5 4.04a2.25 2.25 0 011.183 1.98V19.5z" />
+			</svg>
+		</Card>
+	</div>
+</Layout>
