@@ -4,6 +4,7 @@ export interface Props {
 }
 
 import '../styles/tailwind.css';
+import '../styles/vendor/calendly.css';
 const { title } = Astro.props;
 const year = new Date().getFullYear();
 ---
@@ -25,5 +26,6 @@ const year = new Date().getFullYear();
 				<p class="text-base text-emerald-600 xl:text-center">© 2019—{year} Piepworks LLC. All rights reserved.</p>
 			</div>
 		</div>
+		<script src="/calendly.js" type="text/javascript" async></script>
 	</body>
 </html>
