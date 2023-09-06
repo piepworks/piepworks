@@ -1,12 +1,22 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@layer tailwind-base, tailwind-components, my-styles, tailwind-utilities;
 
-@layer base {
+@layer tailwind-base {
+  @tailwind base;
+}
+@layer tailwind-components {
+  @tailwind components;
+}
+@layer tailwind-utilities {
+  @tailwind utilities;
+}
+
+@layer my-styles {
   a {
-    @apply
-      text-emerald-500
-      underline
-      hover:text-emerald-50;
+    color: theme(colors.emerald.500);
+    text-decoration: underline;
+
+    &:hover {
+      color: theme(colors.emerald.50);
+    }
   }
 }
