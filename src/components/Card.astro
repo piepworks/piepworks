@@ -7,7 +7,7 @@ export interface Props {
 const { href, title } = Astro.props;
 ---
 
-<div>
+<div class="card">
 	<div>
 		<span class="flex h-12 w-12 items-center justify-center rounded-md bg-white bg-opacity-10">
 			{href
@@ -18,6 +18,6 @@ const { href, title } = Astro.props;
 	</div>
 	<div class="mt-6">
 		<h3 class="text-lg font-medium text-white">{title}</h3>
-		<p class="mt-2 text-base text-emerald-200"><slot /></p>
+		<p class="mt-2 text-base"><slot /></p>
 	</div>
 </div>

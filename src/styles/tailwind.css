@@ -11,12 +11,46 @@
 }
 
 @layer my-styles {
+  body {
+    color: theme(colors.emerald.200);
+  }
+
   a {
     color: theme(colors.emerald.500);
     text-decoration: underline;
 
     &:hover {
       color: theme(colors.emerald.50);
+    }
+  }
+
+  main {
+    a {
+      width: 100%;
+      padding: theme(padding.3) theme(padding.8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: theme(borderRadius.md);
+      border-width: 1px;
+      border-color: transparent;
+      background: theme(colors.emerald.600);
+      color: white;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      font-weight: 500;
+      text-decoration: none;
+
+      @media (min-width: theme(screens.md)) {
+        padding: theme(padding.4) theme(padding.10);
+        font-size: theme(fontSize.lg);
+        line-height: theme(lineHeight.7);
+      }
+
+      &:hover {
+        color: theme(colors.emerald.800);
+        background: theme(colors.emerald.300);
+      }
     }
   }
 }
