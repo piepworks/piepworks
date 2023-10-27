@@ -4,7 +4,6 @@ export interface Props {
 }
 
 import '../styles/tailwind.css';
-import '../styles/vendor/calendly.css';
 const { title } = Astro.props;
 const year = new Date().getFullYear();
 ---
@@ -25,6 +24,5 @@ const year = new Date().getFullYear();
 				<div class="text-base xl:text-center"><a class="underline text-emerald-300 hover:text-emerald-100" href="https://ko-fi.com/piepworks">💚 Buy us a coffee on Ko-fi</a></div>
 			</div>
 		</div>
-		<script src="/calendly.js" type="text/javascript" async></script>
 	</body>
 </html>
