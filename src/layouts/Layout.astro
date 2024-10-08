@@ -1,28 +1,36 @@
 ---
 export interface Props {
-	title: string;
+  title: string;
 }
 
-import '../styles/tailwind.css';
+import "../styles/tailwind.css";
 const { title } = Astro.props;
 const year = new Date().getFullYear();
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width">
-		<meta name="generator" content={Astro.generator}>
-		<title>{title}</title>
-	</head>
-	<body class="bg-emerald-900">
-		<div class="mx-auto max-w-4xl px-4 py-16 sm:px-6 sm:pt-20 sm:pb-24 lg:max-w-7xl lg:px-8 lg:pt-24">
-			<slot />
-			<div class="mt-20 border-t border-emerald-700 pt-8">
-				<div class="text-base text-emerald-600 xl:text-center">© 2019—{year} Piepworks LLC. All rights reserved.</div>
-				<div class="mt-6 text-base xl:text-center"><a class="underline text-emerald-300 hover:text-emerald-100" href="https://ko-fi.com/piepworks">💚 Buy us a coffee on Ko-fi</a></div>
-			</div>
-		</div>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <div
+      class="mx-auto max-w-4xl px-4 py-16 sm:px-6 sm:pt-20 sm:pb-24 lg:max-w-7xl lg:px-8 lg:pt-24"
+    >
+      <slot />
+      <div class="mt-20 border-t border-emerald-700 pt-8">
+        <div class="text-base text-emerald-500 xl:text-center">
+          © 2019—{year} Piepworks LLC. All rights reserved.
+          <a
+            class="no-underline outline outline-2 outline-offset-2 rounded-sm outline-transparent hover:outline-emerald-200"
+            href="https://ko-fi.com/piepworks"
+            title="Buy us a coffee on Ko-fi">💚</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
