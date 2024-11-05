@@ -17,6 +17,18 @@
     background-color: theme(colors.emerald.800);
   }
 
+  .logos {
+    background-image: url(/grain-dark-2.png);
+    background-color: theme(colors.emerald.900);
+
+    li {
+      padding: theme(padding.2);
+      background-color: theme(colors.emerald.800);
+      background-image: url(/grain-dark-2.png);
+      border-radius: theme(borderRadius.xl);
+    }
+  }
+
   a {
     color: theme(colors.emerald.500);
     text-decoration: underline;
