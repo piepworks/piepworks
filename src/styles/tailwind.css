@@ -22,10 +22,24 @@
     background-color: theme(colors.emerald.900);
 
     li {
-      padding: theme(padding.2);
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    a {
       background-color: theme(colors.emerald.800);
       background-image: url(/grain-dark-2.png);
       border-radius: theme(borderRadius.xl);
+      padding: theme(padding.2);
+      height: theme(height.36);
+      width: theme(width.36);
+      display: block;
+
+      &:hover,
+      &:focus {
+        box-shadow: theme(boxShadow.xl);
+      }
     }
   }
 
