@@ -4,6 +4,7 @@ export interface Props {
 }
 
 import "../styles/tailwind.css";
+import { Tooltips } from "astro-tooltips";
 const { title } = Astro.props;
 const year = new Date().getFullYear();
 ---
@@ -15,6 +16,7 @@ const year = new Date().getFullYear();
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <Tooltips placement="top" theme="pw" />
   </head>
   <body>
     <div

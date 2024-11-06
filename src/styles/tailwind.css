@@ -52,3 +52,21 @@
     }
   }
 }
+
+.tippy-box[data-theme~='pw'] {
+  background-color: white;
+  color: black;
+
+  &[data-placement^='top'] > .tippy-arrow::before {
+    border-top-color: white;
+  }
+  &[data-placement^='bottom'] > .tippy-arrow::before {
+    border-bottom-color: white;
+  }
+  &[data-placement^='left'] > .tippy-arrow::before {
+    border-left-color: white;
+  }
+  &[data-placement^='right'] > .tippy-arrow::before {
+    border-right-color: white;
+  }
+}

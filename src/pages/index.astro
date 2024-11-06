@@ -10,7 +10,7 @@ import houseIcon from "../icons/house.svg?raw";
 <Layout title="Piepworks LLC / Makers of fine software products">
   <div class="text-center">
     <div class="inline-block h-60 w-60">
-			<Fragment set:html={houseIcon} />
+      <Fragment set:html={houseIcon} />
     </div>
 
     <h1
@@ -32,19 +32,43 @@ import houseIcon from "../icons/house.svg?raw";
       <a
         href="mailto:homepage@piepworks.com"
         class="text-emerald-500 hover:text-emerald-200 h-16 w-16 inline-block"
+        title="Send us an email!"
       >
         <Fragment set:html={mailIcon} />
       </a>
     </p>
 
     <div class="place-content-center">
-      <ul class="logos flex-col sm:flex-row inline-flex p-6 gap-8 rounded-3xl shadow-inner">
+      <ul
+        class="logos flex-col sm:flex-row inline-flex p-6 gap-8 rounded-3xl shadow-inner"
+      >
         <li>
-          <a href="https://bookstacks.app" class="hover:bg-emerald-950" target="_blank"><Fragment set:html={stacksIcon} /></a>
+          <a
+            href="https://bookstacks.app"
+            title="Book Stacks"
+            class="hover:bg-emerald-950"
+            target="_blank"><Fragment set:html={stacksIcon} /></a
+          >
         </li>
-        <li> <a href="https://cassettenest.com" class="hover:bg-emerald-950" target="_blank"> <Fragment set:html={cnIcon} /> </a>
+        <li>
+          <a
+            href="https://cassettenest.com"
+            title="Cassette Nest"
+            class="hover:bg-emerald-950"
+            target="_blank"
+          >
+            <Fragment set:html={cnIcon} />
+          </a>
         </li>
-        <li> <a href="https://listsofbooks.com" class="hover:bg-emerald-600" target="_blank"> <Fragment set:html={listsOfBooksIcon} /> </a>
+        <li>
+          <a
+            href="https://listsofbooks.com"
+            title="Lists of Books"
+            class="hover:bg-emerald-600"
+            target="_blank"
+          >
+            <Fragment set:html={listsOfBooksIcon} />
+          </a>
         </li>
       </ul>
     </div>
