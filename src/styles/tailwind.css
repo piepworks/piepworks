@@ -1,14 +1,4 @@
-@layer tailwind-base, tailwind-components, my-styles, tailwind-utilities;
-
-@layer tailwind-base {
-  @tailwind base;
-}
-@layer tailwind-components {
-  @tailwind components;
-}
-@layer tailwind-utilities {
-  @tailwind utilities;
-}
+@import "tailwindcss";
 
 @layer my-styles {
   body {
