@@ -1,6 +1,9 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
-@layer my-styles {
+@layer base {
+  @import "./typography";
+
   body {
     color: theme(colors.emerald.200);
     background-image: url(/grain-dark-2.png);
@@ -65,5 +68,65 @@
   }
   &[data-placement^="right"] > .tippy-arrow::before {
     border-right-color: white;
+  }
+}
+
+footer {
+  border-color: var(--color-emerald-700);
+  color: var(--color-emerald-500);
+}
+
+body.fly-with-django {
+  background-color: var(--color-emerald-200);
+  background-image: url(/grain-light.png);
+  color: var(--color-emerald-700);
+
+  h2 a,
+  .prose a {
+    color: var(--color-emerald-600);
+
+    &:hover {
+      color: var(--color-emerald-800);
+      background: var(--color-emerald-100);
+    }
+
+    &.button {
+      display: inline-block;
+      text-decoration: none;
+      color: var(--color-emerald-50);
+      background: var(--color-emerald-600);
+      padding: --spacing(2) --spacing(6);
+      border-radius: calc(infinity * 1px); /* rounded-full */
+
+      &:hover {
+        background: var(--color-emerald-800);
+      }
+    }
+  }
+
+  a.ko-fi:hover {
+    outline-color: var(--color-emerald-500);
+  }
+
+  footer {
+    border-color: var(--color-emerald-500);
+    color: var(--color-emerald-600);
+  }
+
+  .prose {
+    font-size: 125%;
+    --tw-prose-body: var(--color-emerald-700);
+    --tw-prose-bullets: var(--color-emerald-700);
+    --tw-prose-bold: var(--color-emerald-800);
+    --tw-prose-hr: var(--color-emerald-500);
+    --tw-prose-headings: var(--color-emerald-700);
+
+    hr {
+      height: --spacing(1.5);
+      width: 33%;
+      margin: 3em auto;
+      border-top-width: --spacing(0.5);
+      background: var(--color-emerald-300);
+    }
   }
 }

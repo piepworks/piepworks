@@ -1,11 +1,12 @@
 ---
 export interface Props {
   title: string;
+  bodyClass?: string;
 }
 
-import "../styles/tailwind.css";
+import "../styles/main.css";
 import { Tooltips } from "astro-tooltips";
-const { title } = Astro.props;
+const { title, bodyClass } = Astro.props;
 const year = new Date().getFullYear();
 ---
 
@@ -18,21 +19,15 @@ const year = new Date().getFullYear();
     <title>{title}</title>
     <Tooltips placement="top" theme="pw" />
   </head>
-  <body>
-    <div
-      class="mx-auto max-w-4xl px-4 py-16 sm:px-6 sm:pt-20 sm:pb-24 lg:max-w-7xl lg:px-8 lg:pt-24"
-    >
+  <body class={bodyClass}>
+    <div class="mx-auto max-w-4xl px-4 py-16 sm:px-6 sm:pt-20 sm:pb-24 lg:max-w-7xl lg:px-8 lg:pt-24">
       <slot />
-      <div class="mt-20 border-t border-emerald-700 pt-8">
-        <div class="text-base text-emerald-500 text-center">
+      <footer class="mt-20 pt-20">
+        <div class="text-base  text-center">
           © 2019—{year} Piepworks LLC. All rights reserved.
-          <a
-            class="no-underline outline outline-2 outline-offset-2 rounded-sm outline-transparent hover:outline-emerald-200"
-            href="https://ko-fi.com/piepworks"
-            title="Buy us a coffee on Ko-fi">💚</a
-          >
+          <a class="ko-fi no-underline outline-2 outline-offset-2 rounded-sm outline-transparent hover:outline-emerald-200" href="https://ko-fi.com/piepworks" title="Buy us a coffee on Ko-fi">💚</a >
         </div>
-      </div>
+      </footer>
     </div>
   </body>
 </html>
