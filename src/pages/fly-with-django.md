@@ -4,7 +4,7 @@
 
 [BH2](https://codeberg.org/trey/bh2) has all the bells and whistles you need, but you might need some help getting things going if you're unfamiliar with any of the parts. **We've got your back!**
 
-Give it a shot, and if you hit a wall, book a _one-time_ consulting session for a flat fee of only _$100 USD_ (sliding scale available, just ask!).
+[Give it a shot](https://codeberg.org/trey/bh2), and if you hit a wall, book a _one-time_ consulting session for a flat fee of _$100 USD_ + tax.
 
 <a href="https://example.com" class="button">Book time with us!</a>
 
@@ -12,11 +12,28 @@ Give it a shot, and if you hit a wall, book a _one-time_ consulting session for 
 
 What makes this setup so hot?
 
+- Django
+  - Obviously.
+  - [benefits]
+- Fly
+  - Ok these first two are gimmies
+  - [benefits]
 - SQLite
-- uv
-- ruff
-- pre-commit
-- Djade
+  - Quite overlooked by most folks.
+  - [lots of benefits]
+- The fliest new stuff that makes writing code (especially Django) a joy
+  - pre-commit
+  - uv & ruff
+    - Replacing
+      - Pip
+      - Black
+      - Flake8
+  - Biome
+    - Replacing
+      - ESLint
+      - Stylelint
+      - Prettier
+  - Djade
 
 ---
 
