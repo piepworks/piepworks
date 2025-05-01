@@ -1,6 +1,6 @@
 ---
 export interface Props {
-  title: string;
+  title?: string;
   bodyClass?: string;
 }
 
@@ -14,10 +14,14 @@ const year = new Date().getFullYear();
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
-    <Tooltips placement="top" theme="pw" />
+    <meta name="viewport" content="width=device-width">
+    <meta name="generator" content={Astro.generator}>
+    <meta name="description" content="Hand-made, affordable, heirloom-quality websites and web applications made for you by a “Mom-and-Pop” software company based in central Vermont, USA.">
+    <title>
+      { title && `${title} / ` }
+      Piepworks: future-proof web applications and websites for real people
+    </title>
+    <Tooltips placement="top" theme="pw">
   </head>
   <body class={bodyClass}>
     <div class="mx-auto max-w-4xl px-4 py-16 sm:px-6 sm:pt-20 sm:pb-24 lg:max-w-7xl lg:px-8 lg:pt-24">
